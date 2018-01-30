@@ -1,0 +1,16 @@
+[Unit]
+Description=A coach Slack bot
+After=network.target
+
+[Service]
+Type=simple
+User=1000
+WorkingDirectory=/home/<user>/
+ExecStart=/home/<user>/elevenbot
+Restart=on-abort
+
+Environment=ELEVENBOT_COACH_SPREADSHEET_ID=<to fill>
+Environment=ELEVENBOT_SLACK_TOKEN=<to fill>
+
+[Install]
+WantedBy=multi-user.target
