@@ -18,7 +18,7 @@ deploy: ## Deploys binary on a Google Cloud instance
 prepare-deploy: ## Prepares bot to be deployed on a new instance
 	@echo '>>> Uploads config/ to server home directory'
 
-	scp config/ ${ELEVENBOT_SSH_USER}@${ELEVENBOT_SSH_IP}:~
+	scp -r config/ ${ELEVENBOT_SSH_USER}@${ELEVENBOT_SSH_IP}:~
 	ssh ${ELEVENBOT_SSH_USER}@${ELEVENBOT_SSH_IP} 'sudo mv config/elevenbot.service /etc/systemd/system/elevenbot.service'
 	ssh ${ELEVENBOT_SSH_USER}@${ELEVENBOT_SSH_IP} 'sudo systemctl daemon-reload'
 
