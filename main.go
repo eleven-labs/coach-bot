@@ -1,13 +1,13 @@
 package main
 
 import (
-	"./coach"
 	"github.com/eko/slackbot"
 	"github.com/robfig/cron"
 	log "github.com/sirupsen/logrus"
 
-	"./config"
-	"./google"
+	"github.com/eleven-labs/coach-bot/coach"
+	"github.com/eleven-labs/coach-bot/config"
+	"github.com/eleven-labs/coach-bot/google"
 )
 
 func main() {
