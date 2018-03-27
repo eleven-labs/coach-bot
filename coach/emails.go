@@ -6,10 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"../config"
 	"github.com/mattbaird/gochimp"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/api/sheets/v4"
+
+	"github.com/eleven-labs/coach-bot/config"
 )
 
 // PlanningEntry defines a planning for a coach.

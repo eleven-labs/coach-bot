@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"../config"
+	"github.com/eleven-labs/coach-bot/config"
 )
 
 var (
